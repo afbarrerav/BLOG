@@ -1,0 +1,439 @@
+/*fuentes personalizadas*/
+@font-face{
+	font-family: MetalMania-Regular;
+	src: url(fuentes/MetalMania-Regular.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: doctor;
+	src: url(fuentes/DOCTOR__.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: parchment;
+	src: url(fuentes/Zabdilus.ttf) format('truetype');
+}
+
+/* estilos basicos*/
+h1,h2,h3,h4,h5,h6{
+	font-family: MetalMania-Regular;
+}
+
+h1{
+	
+	color: white;
+	font-size: 36px;
+	top: -5%;
+	margin-top: -10px;
+	letter-spacing: 0px;
+	display: inline;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h2{
+	
+	color: white;
+	font-size: 16px;
+	top: -5%;
+	margin-top: 10px;
+	letter-spacing: 0px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h3{
+	margin: 0px;
+	padding: 0px;
+	font-size: 36px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h4{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+#tipo{
+	position: absolute;
+	-webkit-transform: translate(100px, 10px);
+	margin-top: -80px;
+}
+
+/*menu de navegacion*/
+nav{
+	display: inline;
+	float: right;
+	margin: 20px;
+}
+
+nav ul{
+	font-size: 12px;
+	padding-left:0px;
+	margin-left: 0px;
+	background-color: grey;
+	color: white;
+	width: 50%;
+	font-family: MetalMania-Regular;
+	position: relative;
+	display: inline;
+}
+
+nav ul li{
+	display: inline;
+	text-align: center;
+}
+
+nav ul li a{
+	background: grey;
+	color: white;
+	text-decoration: none;
+	float: right;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	-webkit-border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 5px white;
+	-webkit-box-shadow: 0px 0px 5px white;
+}
+
+nav ul li a:hover{
+	background: white;
+	color: black;
+	box-shadow: 0px 0px 25px white;
+	-webkit-box-shadow: 0px 0px 25px white;
+	width: 55px;
+}
+
+canvas{
+	border: 0px solid white;
+	width: 55px;
+}
+
+p{
+	font-family: parchment;
+	font-size: 200%;
+	text-align: justify;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+p.sobremi{
+	font-family: parchment;
+	font-size: 280%;
+}
+
+/*maquetacion principal*/
+body{
+	text-align: center;
+	margin: 0px;
+	background: gray;
+	/*MULTIPLES FONDOS Y TRANSPARENCIAS
+	* COMENTARIO POR NO TENER IMAGENES APROPIADAS PARA REALIZAR EL EJEMPLO DEBEN TENER TRANSPARENCIA PARA VER RESULTADOS
+	*/
+	/*background: url('../img/fondo1.jpg'),url('../img/fondo1.png');*/
+	background-image:url('../img/fondo1.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+	background:rgba(255,255,255,);
+
+}
+
+#principal{
+	text-align: left;
+	margin: auto;
+	width: 80%;
+	height: 100%;
+	position: relative;
+	background: rgba(255,255,255,0.5);
+	
+}
+
+#cajaheader{
+	width: 100%;
+	height: 105px;
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+}
+
+header{
+	margin: auto;
+	text-align: left;
+	width: 100%;
+	height: 100px;
+	/*background: darkgray;*/
+	overflow: hidden;
+
+	border: 2px solid white;
+
+	/*nuevas css3*/
+	border-radius: 5px 35px 0px 0px;
+	/*sombras que crea resplandor*/
+	box-shadow: 0px 0px 10px white;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	display: inline;
+	position: relative;
+}
+
+footer{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	background: darkgray;
+
+	border: 2px solid white;
+	border-radius: 0px 0px 5px 35px;
+	box-shadow: 0px 0px 10px white;
+}
+
+/*contenido*/
+#contenido{
+	width: 100%;
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.8);
+}
+
+article{
+	width: 55%;
+	/*255 en el rojo, en verde y azul hace color blanco con transparencia de 0*/
+	background: rgba(255,255,255,0);
+	margin: 10px;
+	height: 100%;
+	display: table;
+	border: 1px solid white;
+	border-radius: 0px 25px 0px 25px;
+	box-shadow: 3px 3px 10px black;
+	padding: 10px 10px 10px 150px;
+	opacity: 0.5;
+	-webkit-transition: opacity 1s, -webkit-box-shadow 1s, -webkit-transform 1s, background 1s;
+	-webkit-transform:scale(1,1);
+}
+
+time{
+	font-family: MetalMania-Regular;
+	font-size: 10px;
+}
+
+article:hover{
+	box-shadow: 0px 0px 25px white;
+	opacity: 1;
+	-webkit-transform:scale(1.1,1.1);
+	background: rgba(255,255,255,1);
+}
+
+aside{
+	float: right;
+	display: inline-table;
+	width: 20%;
+	
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 0px 25px 0px 25px;
+	box-shadow: 3px 3px 10px black;
+}
+
+aside ul{
+	width: 100%;
+	height: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: white;
+	float: left;
+	font-family: MetalMania-Regular;
+	font-size: 10px;
+	text-decoration: none;
+	list-style: none;
+}
+
+aside ul li{
+	width: 100%;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 0px 5px 0px 5px;
+	text-decoration: none;
+}
+
+aside ul li a{
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+#sobreMi{
+	width: 100%;
+	height: 120px;
+	background: black;
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+	text-align: justify;
+	overflow: hidden;
+	border-radius: 0px 10px 0 10px;
+	-webkit-transition: opacity 1s, -webkit-box-shadow 1s, -webkit-transform 1s, background 1s;
+	-webkit-transform:scale(1,1);
+}
+
+#sobreMi:hover{
+	box-shadow: 0px 0px 25px white;
+	opacity: 1;
+	-webkit-transform:scale(1.1,1.1);
+}
+
+#sobreMi a{
+	color: white;
+	text-decoration: none;
+}
+
+#mifoto{
+	width: 120px;
+	height: 100px;
+	font-family: parchment;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url('../photo/AndresFelipeBarreraVelasquez2.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	float: left;
+	margin: 10px;
+	/*ANIMACION EN CSS3 CAMBIA LA SOMBRE DE LA FOTOGRAFIA ANIMADA*/
+	animation: parpadeo 5s;
+	-webkit-animation: parpadeo 5s;
+	/*SE REPITE INFINITAS VECES*/
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+}
+
+/*DEFINIR QUE PASA EN LA ANIMACION SE ESTABLECE*/
+@-webkit-keyframes parpadeo{
+	/*desde 0%*/
+	0% {-webkit-box-shadow: 0px 0px 10px white;}
+	/*desde 50%*/
+	50% {-webkit-box-shadow: 0px 0px 50px white;}
+	/*desde 100%*/
+	100% {-webkit-box-shadow: 0px 0px 10px white;}
+}
+
+#AppsCo{
+	width: 100px;
+	height: 100px;
+	font-family: parchment;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url('../photo/AppsCo.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	float: left;
+	margin: 10px;
+
+	position: absolute;
+	-webkit-transform:translate(-140px, 0px);
+}
+
+#VideoSteve{
+	width: 100px;
+	height: 100px;
+	font-family: parchment;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url('../photo/Steve_Vai-Tender_Surrender.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	float: left;
+	margin: 10px;
+
+	position: absolute;
+	-webkit-transform:translate(-140px, 0px);
+}
+
+#AudioBuckethead{
+	width: 100px;
+	height: 100px;
+	font-family: parchment;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url('../photo/Buckethead_Giant_Robot.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	float: left;
+	margin: 10px;
+
+	position: absolute;
+	-webkit-transform:translate(-140px, 0px);
+}
+
+/*maquetacion del contacto y validacion de campos requediros*/
+[required]{
+	border-color: green;
+	box-shadow: 0px 0px 5px green;
+	-webkit-box-shadow: 0px 0px 5px green;
+}
+
+:invalid{
+	border-color: red;
+	box-shadow: 0px 0px 5px red;
+	-webkit-box-shadow: 0px 0px 5px red;
+}
+
+form table{
+	width: 100%;
+	border: 0px solid white;
+	padding: 0px;
+	margin: auto;
+}
+
+form{
+	font-family: MetalMania-Regular;
+	color: black;
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	border: 1px solid white;
+	border-radius:0px 15px 0px 15px;
+	box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.5);
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+}
+
+form input, form textarea{
+	font-size: 30px;
+	font-family: parchment;
+	background: (255,255,255,0.5);
+	border: 1px dotted white;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	border-radius: 0px 5px 0px 5px;
+}
